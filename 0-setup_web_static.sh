@@ -12,4 +12,4 @@ sudo chown -R ubuntu:ubuntu /data/
 myc="\n\tlocation \/hbnb_static\/ {\n\t\talias \/data\/web_static\/current\/\;\n\t}\n"
 st="server {"
 sudo sed -i "s/^$st/$st$myc/" /etc/nginx/sites-enabled/default
-sudo service nginx start
+sudo service nginx restart
