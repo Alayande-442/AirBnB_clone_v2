@@ -7,7 +7,11 @@ from fabric.operations import local, put, run
 from datetime import datetime as d
 from fabric.api import *
 
+<<<<<<< HEAD
 env.hosts = ['100.25.205.18', '54.173.196.75']
+=======
+env.hosts = ['34.74.120.150', '54.173.196.75']
+>>>>>>> 72e9d75f0aee04fe9ee71b1d1468ff10dbc780b3
 created_archive = None
 
 

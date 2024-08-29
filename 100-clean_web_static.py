@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 72e9d75f0aee04fe9ee71b1d1468ff10dbc780b3
 #!/usr/bin/python3
 """
 a Fabric script that generates a .tgz archive
@@ -8,7 +11,11 @@ from fabric.operations import local, put, run, sudo
 from datetime import datetime as d
 from fabric.api import *
 
+<<<<<<< HEAD
 env.hosts = ['100.25.205.18', '54.173.196.75']
+=======
+env.hosts = ['34.74.120.150', '54.173.196.75']
+>>>>>>> 72e9d75f0aee04fe9ee71b1d1468ff10dbc780b3
 created_archive = None
 
 
@@ -82,4 +89,7 @@ def do_clean(number=0):
     local("ls versions/*.tgz -A1t | tail -n +%d | xargs rm" % n)
     with cd('/data/web_static/releases/'):
         run("ls -t1 | grep '^web_static' | tail -n +%d | xargs rm -rf" % n)
+<<<<<<< HEAD
 
+=======
+>>>>>>> 72e9d75f0aee04fe9ee71b1d1468ff10dbc780b3
